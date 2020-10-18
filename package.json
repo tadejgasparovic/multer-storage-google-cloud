@@ -1,6 +1,6 @@
 {
   "name": "@duplexsi/multer-storage-google-cloud",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Multer storage engine for Google Cloud Storage",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -19,11 +19,11 @@
     "cloud",
     "storage",
     "file",
-	"upload",
-	"typescript"
+    "upload",
+    "typescript"
   ],
   "files": [
-	  "/lib"
+    "/lib"
   ],
   "author": "Tadej Gašparovič <tadej@duplex.si>",
   "license": "MIT",
