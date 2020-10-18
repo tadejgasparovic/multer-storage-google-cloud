@@ -1,0 +1,1 @@
+export { MulterGoogleCloudStorage, DestinationFactory, GoogleCloudOptions } from './multer-google-cloud-storage';
