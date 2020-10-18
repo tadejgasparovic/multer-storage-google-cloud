@@ -35,7 +35,8 @@ export class MulterGoogleCloudStorage extends Storage implements StorageEngine {
 	{
 		const randomId = crypto.randomBytes(8).toString('hex');
 		const filenameParts = file.originalname.split('.');
-		const filenameWithRandomId = filenameParts.slice(0, filenameParts.length - 1) + randomId + '.' + filenameParts.pop();
+		const filenameWithRandomId = filenameParts.slice(0, filenameParts.length - 1).join('.')
+										+ randomId + '.' + filenameParts.pop();
 
 		if(typeof this.options.destination === 'string')
 		{
