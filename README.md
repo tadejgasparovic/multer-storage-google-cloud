@@ -1,6 +1,13 @@
 # Google Cloud Multer Storage Engine
 Lightweight, stream-based implementation of a [Multer storage engine](https://www.npmjs.com/package/multer) for storing uploaded files in a [Google Cloud bucket](https://cloud.google.com/storage) built with TypeScript.
 
+## Installation
+**Npm:**
+> `npm i -S @duplex/multer-storage-google-cloud`
+
+**Yarn:**
+> `yarn add @duplex/multer-storage-google-cloud`
+
 ## Usage & Example
 > For a full working example see [test/index.ts](test/index.ts). Run the example using `npm test` or `yarn test`.
 
