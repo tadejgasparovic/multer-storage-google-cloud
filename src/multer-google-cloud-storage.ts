@@ -34,7 +34,13 @@ export class MulterGoogleCloudStorage extends Storage implements StorageEngine {
 	private async getDestination(req: Request, file: Express.Multer.File): Promise<string>
 	{
 		const randomId = crypto.randomBytes(8).toString('hex');
-		if(typeof this.options.destination === 'string') return join(this.options.destination, file.originalname + randomId);
+		const filenameParts = file.originalname.split('.');
+		const filenameWithRandomId = filenameParts.slice(0, filenameParts.length - 1) + randomId + '.' + filenameParts.pop();
+
+		if(typeof this.options.destination === 'string')
+		{
+			return join(this.options.destination, filenameWithRandomId);
+		}
 		else if(typeof this.options.destination === 'function')
 		{
 			const destinationFactory = this.options.destination as DestinationFactory;
@@ -43,7 +49,7 @@ export class MulterGoogleCloudStorage extends Storage implements StorageEngine {
 				)
 			);
 		}
-		else return file.originalname + randomId;
+		else return filenameWithRandomId;
 	}
 
 	async _handleFile(
