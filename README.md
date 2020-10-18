@@ -3,10 +3,11 @@ Lightweight, stream-based implementation of a [Multer storage engine](https://ww
 
 ## Installation
 **Npm:**
-> `npm i -S @duplex/multer-storage-google-cloud`
+`npm i -S @duplexsi/multer-storage-google-cloud`
+
 
 **Yarn:**
-> `yarn add @duplex/multer-storage-google-cloud`
+`yarn add @duplexsi/multer-storage-google-cloud`
 
 ## Usage & Example
 > For a full working example see [test/index.ts](test/index.ts). Run the example using `npm test` or `yarn test`.
