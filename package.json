@@ -2,8 +2,8 @@
   "name": "@duplexsi/multer-storage-google-cloud",
   "version": "1.0.3",
   "description": "Multer storage engine for Google Cloud Storage",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "build": "rimraf lib & tsc",
     "build:test": "npm run build && rimraf lib-test && tsc --build test.tsconfig.json",
