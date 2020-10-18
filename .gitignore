@@ -1,5 +1,5 @@
-dist/
-dist-test/
+lib/
+lib-test/
 node_modules/
 yarn-error.log
 google-storage.json

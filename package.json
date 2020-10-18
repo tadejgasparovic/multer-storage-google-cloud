@@ -5,9 +5,9 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "rimraf dist & tsc",
-    "build:test": "npm run build && rimraf dist-test && tsc --build test.tsconfig.json",
-    "test": "node dist-test/index.js"
+    "build": "rimraf lib & tsc",
+    "build:test": "npm run build && rimraf lib-test && tsc --build test.tsconfig.json",
+    "test": "node lib-test/index.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,9 @@
     "file",
 	"upload",
 	"typescript"
+  ],
+  "files": [
+	  "/lib"
   ],
   "author": "Tadej Gašparovič <tadej@duplex.si>",
   "license": "MIT",

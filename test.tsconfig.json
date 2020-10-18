@@ -2,7 +2,7 @@
 	"compilerOptions": {
 		"module": "CommonJS",
 		"target": "ES2015",
-		"outDir": "./dist-test"
+		"outDir": "./lib-test"
 	},
 	"include": [
 		"test/**/*"
